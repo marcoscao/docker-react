@@ -1,0 +1,26 @@
+version:  '3'
+services:
+  reactdemo:
+    build:
+      context:  .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/app/node_modules
+      - .:/usr/app
+    stdin_open: true
+  tests_reactdemo:
+    build:
+      context:  .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/app/node_modules
+      - .:/usr/app
+    stdin_open: true
+    command:  ["npm","run","test"]
+
+
+
