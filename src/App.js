@@ -20,6 +20,7 @@ function App() {
           Fuck you!!!!!!!!!!! little bastard!!!!
      \n **************************
 	  sniff
+	  but... learn react
 	  </a>
       </header>
     </div>
